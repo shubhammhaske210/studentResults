@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Result</title>
+</head>
+<body>
+  {% for x in user %}
+    <div> 
+        <p><h3>PRN : {{x.PRN}}</h3></p>
+        <p><h3>First Name : {{x.first_name}}</h3></p>
+        <p><h3>Last Name : {{x.last_name}}</h3></p>     
+    </div>
+  {% endfor %} 
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 5px;
+          text-align: left;    
+        }
+        </style>
+        <table style="width:30%">
+
+          {% for m in marks%}
+            <tr>
+              <th>Subjects</th>
+              <th>Marks</th>
+            </tr>
+            <tr>
+              <td>Subject1</td>
+              <td>{{ m.subject1 }}</td>
+            </tr>
+            <tr>
+              <td>Subject2</td>
+              <td>{{ m.subject2 }}</td>
+            </tr>
+            <tr>
+              <td>Subject3</td>
+              <td>{{ m.subject3 }}</td>
+            </tr>
+            <tr>
+              <td>Subject4</td>
+              <td>{{ m.subject4 }}</td>
+            </tr>
+          {% endfor %}
+        </table>
+
+        
+</body>
+</html>

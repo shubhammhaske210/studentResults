@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action = "Details" method = "post">
+        {% csrf_token%}
+        <input type="text" name='first_name' placeholder="First Name"><br>
+        <input type="text" name='last_name' placeholder="Last Name"><br>
+        <input type="text" name='prn' placeholder="PRN"><br>
+        <input type="text" name='subject1' placeholder="Subject1"><br>
+        <input type="text" name='subject2' placeholder="Subject2"><br>
+        <input type="text" name='subject3' placeholder="Subject3"><br>
+        <input type="text" name='subject4' placeholder="Subject4"><br>
+        Select Semester :  <select name="semester">
+            <option value="1">Sem 1</option>
+            <option value="2">Sem 2</option>
+            <option value="3">Sem 3</option>
+            <option value="4">Sem 4</option>
+            <option value="5">Sem 5</option>
+            <option value="6">Sem 6</option>
+            <option value="7">Sem 7</option>
+            <option value="8">Sem 8</option>
+        </select><br>
+        <input type="submit">
+</body>
+</html>
